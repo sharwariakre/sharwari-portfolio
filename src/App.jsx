@@ -1,39 +1,47 @@
-import { useState, useEffect } from "react";
+import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Publications from "./components/Publications";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark"); // ✅ add to <html>
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
-
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 flex flex-col">
-      <nav className="flex justify-between items-center px-8 py-4 bg-gray-50 dark:bg-gray-800 shadow">
-        <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          Sharwari Akre
-        </h1>
+    <div className="flex">
+      <Sidebar />
 
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="px-3 py-1 rounded-md bg-blue-600 text-white dark:bg-blue-400 hover:opacity-90"
-        >
-          {darkMode ? "Light Mode" : "Dark Mode"}
-        </button>
-      </nav>
+      <div className="flex-1 md:ml-[25%] lg:ml-[20%] h-screen overflow-y-scroll scroll-smooth bg-gray-50">
+        <section id="home" className="min-h-screen flex items-center justify-center">
+          <Home />
+        </section>
 
-      <main className="flex flex-col items-center justify-center flex-grow">
-        <h2 className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-          Hello World
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300">
-          Toggle the button to switch themes!
-        </p>
-      </main>
+        <section id="about" className="min-h-screen flex items-center justify-center">
+          <About />
+        </section>
+
+        <section id="experience" className="min-h-screen flex items-center justify-center">
+          <Experience />
+        </section>
+
+        <section id="education" className="min-h-screen flex flex-col justify-start">
+          <Education />
+        </section>
+
+        <section id="skills" className="min-h-screen">
+          <Skills />
+        </section>
+
+        <section id="projects" className="min-h-screen">
+          <Projects />
+        </section>
+
+        <section id="publications" className="min-h-screen">
+          <Publications />
+        </section>
+
+      </div>
     </div>
   );
 }
