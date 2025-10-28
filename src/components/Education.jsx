@@ -23,7 +23,7 @@ export default function Education() {
             </p>
             <ul className="list-disc ml-6 text-gray-600 leading-relaxed">
               <li>Focused on Software Engineering and Cloud Systems</li>
-              <li>Graduate Teaching Assistant (Fall 2024)</li>
+              
             </ul>
           </div>
 
