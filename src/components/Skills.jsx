@@ -8,15 +8,14 @@ import {
     FaAws,
     FaGitAlt,
     FaLinux,
+    FaChartBar,
 } from "react-icons/fa";
 import {
     SiTypescript,
     SiSolidity,
     SiFlask,
     SiDjango,
-    SiFastapi,
     SiExpress,
-    SiElectron,
     SiJquery,
     SiMongodb,
     SiPostgresql,
@@ -26,6 +25,7 @@ import {
     SiGooglecloud,
     SiApache,
     SiPostman,
+    SiVite, SiTableau,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -36,9 +36,7 @@ export default function Skills() {
                 { name: "Python", icon: <FaPython className="text-[#3776AB]" /> },
                 { name: "Java", icon: <FaJava className="text-[#E51F24]" /> },
                 { name: "JavaScript", icon: <FaJsSquare className="text-[#F7DF1E]" /> },
-                { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
                 { name: "Solidity", icon: <SiSolidity className="text-gray-600" /> },
-                { name: "HTML5", icon: <FaJsSquare className="text-[#E34F26]" /> },
             ],
         },
         {
@@ -51,12 +49,13 @@ export default function Skills() {
             ],
         },
         {
-            title: "Frontend",
+            title: "Frontend & UI",
             skills: [
                 { name: "React", icon: <FaReact className="text-[#61DAFB]" /> },
-                { name: "Electron", icon: <SiElectron className="text-[#47848F]" /> },
+                { name: "Vite", icon: <SiVite className="text-[#646CFF]" /> },
                 { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
                 { name: "jQuery", icon: <SiJquery className="text-[#0769AD]" /> },
+                { name: "HTML5", icon: <FaJsSquare className="text-[#E34F26]" /> },
             ],
         },
         {
@@ -74,6 +73,9 @@ export default function Skills() {
                 { name: "Apache", icon: <SiApache className="text-[#D22128]" /> },
                 { name: "Postman", icon: <SiPostman className="text-[#FF6C37]" /> },
                 { name: "Git", icon: <FaGitAlt className="text-[#F05032]" /> },
+                { name: "Tableau", icon: <SiTableau className="text-[#E97627]" /> },
+                { name: "Power BI", icon: <FaChartBar className="text-[#F2C811]" /> },
+
             ],
         },
     ];
