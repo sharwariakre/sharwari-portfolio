@@ -9,10 +9,13 @@ import Publications from "./components/Publications";
 
 export default function App() {
   return (
-    <div className="flex">
-      <Sidebar />
+    <div className="flex flex-col md:flex-row bg-gray-50 min-h-full">
 
-      <div className="flex-1 md:ml-[25%] lg:ml-[20%] h-screen overflow-y-scroll scroll-smooth bg-gray-50">
+      <Sidebar />
+      <main className="flex-1 md:ml-[20%] mt-[60px] md:mt-0 overflow-y-visible scroll-smooth">
+
+
+
         <section id="home" className="min-h-screen flex items-center justify-center">
           <Home />
         </section>
@@ -40,8 +43,7 @@ export default function App() {
         <section id="publications" className="min-h-screen">
           <Publications />
         </section>
-
-      </div>
+      </main>
     </div>
   );
 }
