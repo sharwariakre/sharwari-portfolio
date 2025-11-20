@@ -34,12 +34,13 @@ export default function Projects() {
       ],
     },
     {
-      title: "PackTravel – Ride Sharing Platform with Google Maps Integration",
-      tech: "Django, MongoDB Atlas, Bootstrap, Google Maps API",
+      title: "Real-time Log Analyzer System",
+      tech: "Ansible, Docker, Prometheus, Grafana, Flask",
       description: [
-        "Built a full-stack ride sharing and carpooling platform with features for ride creation, request management, in-app forums, user preferences, and feedback system.",
-        "Integrated Google Maps API for real-time route visualization, distance and duration estimation, and developed a machine learning model to predict cab fares based on ride attributes.",
-        "Designed scalable architecture with stateless REST APIs, CDN support, and MongoDB horizontal sharding, ensuring performance and reliability at scale.",
+        "Built an automated CI/CD pipeline using GitHub Actions + a self-hosted runner, enabling zero-touch builds, tests, and deployments to a remote Linux VM.",
+        "Deployed a multi-container system (Flask Log Analyzer API, Prometheus, Grafana, Log Feeder) using Docker Compose orchestrated through Ansible in the CD pipeline.",
+        "Implemented custom Prometheus metrics (counters, labeled metrics, latency histograms) for real-time monitoring of log volume, severity distribution, and API performance.",
+        "Provisioned Grafana dashboards automatically on deployment, visualizing live system metrics and validating the end-to-end observability pipeline with synthetic log traffic.",
       ],
     },
     {
