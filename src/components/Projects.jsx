@@ -7,40 +7,39 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Warehouse Management System – Java-Based Inventory Architecture",
-      tech: "Java, MariaDB, Apache Maven",
+      title: "CodeNarrator - AI-Powered Code Explanation Tool",
+      tech: "FastAPI, Python, Ollama, D3.js",
       description: [
-        "Architected a scalable, transaction-intensive database from scratch to power nationwide multi-store warehouse operations.",
-        "Implemented modular Java backend services with Apache Maven and optimized MariaDB queries for high-throughput inventory tracking and reporting.",
+        "Built an autonomous codebase understanding agent that iteratively explores GitHub repositories, maps internal dependencies, and decides what to inspect next without human input.",
+        "Integrated a local Qwen2.5-Coder 7B model via Ollama to generate AI architectural summaries like component breakdowns and dependency explanations with no external API or cloud cost.",
+        "Produced self-contained HTML reports with interactive D3.js dependency graphs for navigating unfamiliar codebases.",
       ],
     },
     {
-      title: "Decentralized Pharma Supply Chain App – Blockchain-Enabled Traceability (Capstone Project)",
-      tech: "Solidity, MetaMask, React.js, MongoDB",
+      title: "Agentic LLM Workflow for Automated Vulnerability Patch Generation",
+      tech: "CodeLlama, CodeAstra, Python, FLawfinder",
       description: [
-        "Developed as the capstone project for my bachelor's program — a decentralized application to track pharmaceutical drug movements, recording transactions on the Ethereum blockchain using smart contracts.",
-        "Designed and implemented a role-based access control system, allowing verified stakeholders to trace full supply chain data and customers to verify product authenticity via QR codes.",
-        "The project received high commendation from the review panel for its real-world applicability in combating counterfeit pharmaceuticals, with encouragement to explore collaboration with public-sector stakeholders for wider implementation.",
-        "A research paper based on this project was later published, highlighting its architecture and blockchain-based validation approach.",
-      ],
-    },
-    {
-      title: "LocaBites – Multi-Vendor Food Marketplace with Real-Time Cart System",
-      tech: "Python, Django, PostgreSQL, AJAX, Payment Gateway API",
-      description: [
-        "Developing a multi-vendor food ordering platform with vendor onboarding, location-based search, and dynamic AJAX powered cart functionality.",
-        "Integrated secure payment gateway and optimized the backend to support growing transaction loads and improve cart processing responsiveness.",
-        "Explored leveraging Redis for caching and Celery for asynchronous task handling to support efficient background processing in future iterations.",
+        "Developed a dual-model pipeline that generates automated patches for C/C++ vulnerabilities using semantic hints.",
+        "Reduced vulnerabilities by up to 50% overall and 70% for high-severity CVEs across 92 Juliet Suite cases.",
+        "Integrated static analysis (Flawfinder), functional evaluation, and CodeBERT-based similarity scoring.",
       ],
     },
     {
       title: "Real-time Log Analyzer System",
       tech: "Ansible, Docker, Prometheus, Grafana, Flask",
       description: [
-        "Built an automated CI/CD pipeline using GitHub Actions + a self-hosted runner, enabling zero-touch builds, tests, and deployments to a remote Linux VM.",
-        "Deployed a multi-container system (Flask Log Analyzer API, Prometheus, Grafana, Log Feeder) using Docker Compose orchestrated through Ansible in the CD pipeline.",
-        "Implemented custom Prometheus metrics (counters, labeled metrics, latency histograms) for real-time monitoring of log volume, severity distribution, and API performance.",
-        "Provisioned Grafana dashboards automatically on deployment, visualizing live system metrics and validating the end-to-end observability pipeline with synthetic log traffic.",
+        "Built a fully automated CI/CD pipeline using GitHub Actions and a self-hosted runner, enabling zero-touch builds, tests and deployments to a remote Linux VM.",
+        "Orchestrated a distributed Docker Compose stack (Flask API, Prometheus, Grafana, Log Feeder) using Ansible.",
+        "Implemented Prometheus counters, labeled metrics and latency histograms for real-time observability of log volume, severity patterns, and API performance.",      
+      ],
+    },
+    {
+      title: "Dead Serious - Cryptographic Dead Man’s Vault ",
+      tech: "React, Node.js, Express, PostgreSQL, AWS S3",
+      description: [
+        "Built a full-stack zero-knowledge vault (HackNC 2026) that encrypts secrets client-side and releases them only after missed check-ins with unanimous multi-party approval.",
+        "Engineered a React + Vite frontend and AES-256-GCM via Web Crypto API; server never sees plaintext or keys.",
+        "Designed a Node.js/Express REST API with PostgreSQL and S3 for vault storage, with a TTL-based dead man’s switch triggering the nominee unlock flow on inactivity.",      
       ],
     },
     {
@@ -51,14 +50,23 @@ export default function Projects() {
         "Extracted MFCC features from over 5,000 audio clips using Librosa, applying normalization and preprocessing to improve training efficiency and accuracy.",
       ],
     },
-    {
-      title: "Student Performance & Behavior Analysis – Clustering with scikit-learn",
-      tech: "NumPy, Pandas, scikit-learn, Seaborn",
+        {
+      title: "LocaBites – Multi-Vendor Food Marketplace with Real-Time Cart System",
+      tech: "Python, Django, PostgreSQL, AJAX, Payment Gateway API",
       description: [
-        "Analyzed performance data from 729 students using features like hint usage, problem attempts, and success rates to assess behavioral trends.",
-        "Applied DBSCAN clustering to identify patterns in learner performance and group students based on struggle profiles.",
-        "Built a prototype recommendation system that maps students to suitable question types based on observed patterns in engagement and accuracy.",
-        "Outlined future scope to integrate Apache Kafka for real-time streaming of student interaction data, enabling continuous updates to clustering results and dynamic recommendations at scale.",
+        "Developing a multi-vendor food ordering platform with vendor onboarding, location-based search, and dynamic AJAX powered cart functionality.",
+        "Integrated secure payment gateway and optimized the backend to support growing transaction loads and improve cart processing responsiveness.",
+        "Explored leveraging Redis for caching and Celery for asynchronous task handling to support efficient background processing in future iterations.",
+      ],
+    },
+        {
+      title: "Decentralized Pharma Supply Chain App – Blockchain-Enabled Traceability (Capstone Project)",
+      tech: "Solidity, MetaMask, React.js, MongoDB",
+      description: [
+        "Developed as the capstone project for my bachelor's program — a decentralized application to track pharmaceutical drug movements, recording transactions on the Ethereum blockchain using smart contracts.",
+        "Designed and implemented a role-based access control system, allowing verified stakeholders to trace full supply chain data and customers to verify product authenticity via QR codes.",
+        "The project received high commendation from the review panel for its real-world applicability in combating counterfeit pharmaceuticals, with encouragement to explore collaboration with public-sector stakeholders for wider implementation.",
+        "A research paper based on this project was later published, highlighting its architecture and blockchain-based validation approach.",
       ],
     },
   ];
