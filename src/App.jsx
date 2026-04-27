@@ -6,43 +6,46 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Publications from "./components/Publications";
+import Certifications from "./components/Certifications";
 
 export default function App() {
   return (
-    <div className="flex flex-col md:flex-row bg-gray-50 min-h-full">
-
+    <div className="flex flex-col md:flex-row min-h-full" style={{ background: "#121212" }}>
       <Sidebar />
-      <main className="flex-1 md:ml-[20%] mt-[60px] md:mt-0 overflow-y-visible scroll-smooth">
+      <main className="flex-1 md:ml-[20%] mt-[56px] md:mt-0 scroll-smooth">
 
-
-
-        <section id="home" className="min-h-screen flex items-center justify-center">
+        <section id="home">
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen flex items-center justify-center">
+        <section id="about">
           <About />
         </section>
 
-        <section id="experience" className="min-h-screen flex items-center justify-center">
+        <section id="experience">
           <Experience />
         </section>
 
-        <section id="education" className="min-h-screen flex flex-col justify-start">
+        <section id="education">
           <Education />
         </section>
 
-        <section id="skills" className="min-h-screen">
+        <section id="skills">
           <Skills />
         </section>
 
-        <section id="projects" className="min-h-screen">
+        <section id="projects">
           <Projects />
         </section>
 
-        <section id="publications" className="min-h-screen">
+        <section id="publications">
           <Publications />
         </section>
+
+        <section id="certifications">
+          <Certifications />
+        </section>
+
       </main>
     </div>
   );

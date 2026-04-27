@@ -1,54 +1,57 @@
-// src/components/About.jsx
 export default function About() {
-    return (
-        <section
-            id="about"
-            className="min-h-screen flex items-center justify-center scroll-mt-20 px-8 py-16"
-        >
-            <div className="max-w-3xl mx-auto">
-                <h2 className="text-4xl font-bold mb-4 text-[#b5542b]">About Me</h2>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                    I’m <span className="font-semibold">Sharwari Akre</span>, a Software Developer who enjoys building scalable and user-focused applications.
-                    I work across the full stack from frontend interfaces to backend APIs with a strong interest in
-                    <span className="text-[#b5542b] font-medium"> cloud infrastructure, DevOps, and clean design systems</span>.
-                </p>
+  return (
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center scroll-mt-20 px-8 py-20"
+      style={{ background: "#181818" }}
+    >
+      <div className="max-w-3xl w-full mx-auto">
+        <div className="section-heading">
+          <p className="section-label">01 / About</p>
+          <h2 className="section-title">About Me</h2>
+          <div className="section-bar" />
+        </div>
 
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                    I’m currently pursuing my <span className="font-medium">Master’s in Computer Science</span> at
-                    <span className="font-medium"> North Carolina State University</span>, where I focus on
-                    <span className="font-medium"> software engineering</span>,
-                    <span className="font-medium"> data analysis</span>, and
-                    <span className="font-medium"> cloud computing</span>.
-                    I’m passionate about building <span className="font-medium"> scalable systems</span> and creating
-                    <span className="font-medium"> data driven solutions</span> that connect technology with
-                    <span className="font-medium"> real world impact</span>.
-                    My goal is to bring together <span className="font-medium"> engineering</span> and
-                    <span className="font-medium"> creativity</span> to design systems that make everyday life simpler and smarter.
-                </p>
+        <p className="text-base leading-relaxed mb-5" style={{ color: "#B8B8B8" }}>
+          I'm <span className="font-semibold" style={{ color: "#F5F5F5" }}>Sharwari Akre</span>, a Backend Engineer focused on{" "}
+          <span className="font-medium" style={{ color: "#D97A43" }}>distributed systems, agentic AI, and LLM applications</span>.
+          I enjoy building intelligent systems that do meaningful work — from autonomous voice agents to automated vulnerability patching pipelines.
+        </p>
 
+        <p className="text-base leading-relaxed mb-5" style={{ color: "#B8B8B8" }}>
+          I'm completing my <span className="font-medium" style={{ color: "#F5F5F5" }}>M.S. in Computer Science</span> at{" "}
+          <span className="font-medium" style={{ color: "#F5F5F5" }}>North Carolina State University</span> (GPA 3.67). My work sits at the intersection of
+          reliable backend engineering and practical AI — systems that are production-ready, not just proof-of-concept.
+        </p>
 
+        <p className="text-base leading-relaxed mb-10" style={{ color: "#B8B8B8" }}>
+          Outside of engineering, I care about building things that matter.
+          My Aria Companion project — an AI voice agent for elderly care — is a direct reflection of that.
+        </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 text-gray-700">
-                    <div>
-                        <p className="font-semibold text-[#b5542b]">Location</p>
-                        <p>Raleigh, NC, USA</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold text-[#b5542b]">Education</p>
-                        <p>MS in Computer Science, NC State University</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold text-[#b5542b]">Interests</p>
-                        <p>Software Development, Backend, Full Stack Development, Data Analysis and Data Engineering</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold text-[#b5542b]">Email</p>
-                        <a href="mailto:sharwari.akre@gmail.com" className="hover:underline text-[#b5542b]">
-                            sharwari.akre@gmail.com
-                        </a>
-                    </div>
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+          {[
+            { label: "Location", value: "Raleigh, NC (Open to Relocation)" },
+            { label: "Education", value: "M.S. Computer Science, NC State" },
+            { label: "Focus Areas", value: "Backend Systems · Agentic AI · LLM Applications" },
+          ].map(({ label, value }) => (
+            <div key={label}>
+              <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#D97A43" }}>{label}</p>
+              <p style={{ color: "#B8B8B8" }}>{value}</p>
             </div>
-        </section>
-    );
+          ))}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#D97A43" }}>Email</p>
+            <a
+              href="mailto:sharwari.akre@gmail.com"
+              style={{ color: "#D97A43" }}
+              className="hover:underline"
+            >
+              sharwari.akre@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

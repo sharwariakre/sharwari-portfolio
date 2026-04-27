@@ -1,34 +1,51 @@
-// src/components/Publications.jsx
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 export default function Publications() {
   return (
     <section
       id="publications"
-      className="min-h-screen bg-gray-50 text-gray-900 pl-8 pr-8 md:pl-20 md:pr-20 py-20 flex flex-col justify-start"
+      className="min-h-[60vh] px-8 md:px-20 py-20 flex flex-col justify-center"
+      style={{ background: "#121212" }}
     >
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-[#b5542b]">Publications</h2>
+      <div className="max-w-4xl mx-auto w-full">
+        <div className="section-heading">
+          <p className="section-label">06 / Research</p>
+          <h2 className="section-title">Publications</h2>
+          <div className="section-bar" />
+        </div>
 
-        <div className="border-l-4 border-[#b5542b] pl-6">
-          <h3 className="text-2xl font-semibold mb-1">
+        <div className="timeline-item">
+          <div className="timeline-dot" />
+          <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: "#555" }}>2023</p>
+          <h3 className="text-lg font-bold mb-1 leading-snug" style={{ color: "#F5F5F5" }}>
             Decentralized Blockchain-Based Pharma Supply Chain for Drug Traceability
           </h3>
-          <p className="text-gray-700 italic mb-2">
-            International Journal of Electrical, Electronics and Computer Systems (IJEEC), 2023
+          <p className="text-sm font-medium mb-1" style={{ color: "#D97A43" }}>
+            International Journal of Electrical, Electronics and Computer Systems (IJEECS)
           </p>
-          <div className="space-x-4">
+          <p className="text-xs mb-4 italic" style={{ color: "#555" }}>
+            Peer-reviewed journal publication on blockchain-based pharmaceutical supply chain architecture
+          </p>
+          <div className="flex flex-wrap gap-4">
             <a
               href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/34285"
               target="_blank"
-              className="text-[#b5542b] hover:underline font-medium"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold hover:underline"
+              style={{ color: "#D97A43" }}
             >
-              View Journal Publication ↗
+              View Journal Publication <FaExternalLinkAlt className="text-xs" />
             </a>
             <a
               href="https://www.researchgate.net/publication/377340047_Blockchain_based_drug_supply_chain_for_decentralized_network"
               target="_blank"
-              className="text-gray-600 hover:text-[#b5542b] hover:underline"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm hover:underline transition-colors"
+              style={{ color: "#6B6B6B" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "#D97A43")}
+              onMouseLeave={e => (e.currentTarget.style.color = "#6B6B6B")}
             >
-              Also available on ResearchGate
+              ResearchGate <FaExternalLinkAlt className="text-xs" />
             </a>
           </div>
         </div>

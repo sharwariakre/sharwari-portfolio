@@ -2,36 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Method 1: Direct Custom CSS */
-.custom-gradient {
-  background: linear-gradient(to right, #00ff87, #60efff);
-}
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #121212; }
+::-webkit-scrollbar-thumb { background: #D97A4366; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #D97A43; }
 
-/* Method 2: Using @layer to create custom components */
 @layer components {
-  .custom-button {
-    @apply px-4 py-2 bg-blue-600 text-white rounded-lg
-    hover:bg-blue-700 transition-colors duration-200;
+  .section-heading {
+    @apply mb-10;
   }
-  
-  .card {
-    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl
-    transition-shadow duration-300;
+  .section-label {
+    @apply text-xs uppercase tracking-widest font-semibold mb-1;
+    color: #D97A43;
+  }
+  .section-title {
+    @apply text-4xl font-bold;
+    color: #F5F5F5;
+  }
+  .section-bar {
+    @apply w-12 h-1 mt-3 rounded-full;
+    background: #D97A43;
+  }
+
+  .skill-tag {
+    @apply inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium
+    border transition-all duration-200 cursor-default select-none;
+    background: rgba(255,255,255,0.04);
+    color: #B8B8B8;
+    border-color: rgba(255,255,255,0.08);
+  }
+  .skill-tag:hover {
+    background: rgba(217,122,67,0.12);
+    border-color: rgba(217,122,67,0.35);
+    color: #D97A43;
+  }
+
+  .timeline-item {
+    @apply relative pl-7 pb-2;
+    border-left: 2px solid rgba(255,255,255,0.08);
+  }
+  .timeline-dot {
+    @apply absolute -left-[9px] top-2 w-4 h-4 rounded-full;
+    background: #D97A43;
+    box-shadow: 0 0 0 3px #121212;
   }
 }
 
-/* Method 3: Custom base styles */
 @layer base {
-  h1 {
-    @apply text-4xl font-bold mb-4;
-  }
-  
-  h2 {
-    @apply text-3xl font-semibold mb-3;
-  }
+  h1 { @apply text-4xl font-bold; }
+  h2 { @apply text-3xl font-semibold; }
 }
 
-/* Regular CSS for specific needs */
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,24 +61,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
 html, body, #root {
   height: auto;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  background: #121212;
 }
 
 html {
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* for iOS */
+  -webkit-overflow-scrolling: touch;
 }

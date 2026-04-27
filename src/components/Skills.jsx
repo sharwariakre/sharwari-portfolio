@@ -1,121 +1,114 @@
 import {
-    FaPython,
-    FaJava,
-    FaJsSquare,
-    FaReact,
-    FaNodeJs,
-    FaDocker,
-    FaAws,
-    FaGitAlt,
-    FaLinux,
-    FaChartBar,
+  FaPython, FaJava, FaJsSquare, FaReact, FaNodeJs,
+  FaDocker, FaAws, FaGitAlt, FaLinux,
 } from "react-icons/fa";
 import {
-    SiTypescript,
-    SiSolidity,
-    SiFlask,
-    SiDjango,
-    SiExpress,
-    SiJquery,
-    SiMongodb,
-    SiPostgresql,
-    SiMysql,
-    SiOracle,
-    SiKubernetes,
-    SiGooglecloud,
-    SiApache,
-    SiPostman,
-    SiVite, SiTableau,
+  SiTypescript, SiCplusplus, SiScikitlearn, SiNumpy, SiPandas,
+  SiPytorch, SiOpenai, SiDjango, SiFlask, SiExpress, SiFastapi,
+  SiNextdotjs, SiPostgresql, SiMongodb, SiMysql, SiOracle,
+  SiGooglecloud, SiKubernetes, SiPostman, SiJira, SiSwagger, SiTwilio,
 } from "react-icons/si";
 
 export default function Skills() {
-    const skillCategories = [
-        {
-            title: "Languages",
-            skills: [
-                { name: "Python", icon: <FaPython className="text-[#3776AB]" /> },
-                { name: "Java", icon: <FaJava className="text-[#E51F24]" /> },
-                { name: "JavaScript", icon: <FaJsSquare className="text-[#F7DF1E]" /> },
-                { name: "Solidity", icon: <SiSolidity className="text-gray-600" /> },
-            ],
-        },
-        {
-            title: "Backend",
-            skills: [
-                { name: "Django", icon: <SiDjango className="text-[#092E20]" /> },
-                { name: "Flask", icon: <SiFlask className="text-gray-700" /> },
-                { name: "Node.js", icon: <FaNodeJs className="text-[#539E43]" /> },
-                { name: "Express.js", icon: <SiExpress className="text-gray-700" /> },
-            ],
-        },
-        {
-            title: "Frontend & UI",
-            skills: [
-                { name: "React", icon: <FaReact className="text-[#61DAFB]" /> },
-                { name: "Vite", icon: <SiVite className="text-[#646CFF]" /> },
-                { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
-                { name: "jQuery", icon: <SiJquery className="text-[#0769AD]" /> },
-                { name: "HTML5", icon: <FaJsSquare className="text-[#E34F26]" /> },
-            ],
-        },
-        {
-            title: "Other Tools & Technologies",
-            skills: [
-                { name: "AWS", icon: <FaAws className="text-[#FF9900]" /> },
-                { name: "GCP", icon: <SiGooglecloud className="text-[#4285F4]" /> },
-                { name: "Docker", icon: <FaDocker className="text-[#2496ED]" /> },
-                { name: "Kubernetes", icon: <SiKubernetes className="text-[#326CE5]" /> },
-                { name: "Linux", icon: <FaLinux className="text-[#FCC624]" /> },
-                { name: "Oracle", icon: <SiOracle className="text-[#F80000]" /> },
-                { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
-                { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
-                { name: "MySQL", icon: <SiMysql className="text-[#00758F]" /> },
-                { name: "Apache", icon: <SiApache className="text-[#D22128]" /> },
-                { name: "Postman", icon: <SiPostman className="text-[#FF6C37]" /> },
-                { name: "Git", icon: <FaGitAlt className="text-[#F05032]" /> },
-                { name: "Tableau", icon: <SiTableau className="text-[#E97627]" /> },
-                { name: "Power BI", icon: <FaChartBar className="text-[#F2C811]" /> },
+  const categories = [
+    {
+      label: "Languages",
+      skills: [
+        { name: "Python",            icon: <FaPython style={{ color: "#3776AB" }} /> },
+        { name: "Java",              icon: <FaJava style={{ color: "#E51F24" }} /> },
+        { name: "JavaScript",        icon: <FaJsSquare style={{ color: "#F7DF1E" }} /> },
+        { name: "TypeScript",        icon: <SiTypescript style={{ color: "#3178C6" }} /> },
+        { name: "C++",               icon: <SiCplusplus style={{ color: "#00599C" }} /> },
+        { name: "SQL",               icon: <SiPostgresql style={{ color: "#336791" }} /> },
+      ],
+    },
+    {
+      label: "ML & AI",
+      skills: [
+        { name: "scikit-learn",      icon: <SiScikitlearn style={{ color: "#F7931E" }} /> },
+        { name: "NumPy",             icon: <SiNumpy style={{ color: "#4DABCF" }} /> },
+        { name: "Pandas",            icon: <SiPandas style={{ color: "#a78bfa" }} /> },
+        { name: "PyTorch",           icon: <SiPytorch style={{ color: "#EE4C2C" }} /> },
+        { name: "OpenAI API",        icon: <SiOpenai style={{ color: "#e5e7eb" }} /> },
+        { name: "Librosa",           icon: null },
+        { name: "CodeBERT",          icon: null },
+        { name: "Ollama",            icon: null },
+        { name: "pgvector",          icon: null },
+      ],
+    },
+    {
+      label: "Backend & Frontend",
+      skills: [
+        { name: "Node.js",           icon: <FaNodeJs style={{ color: "#539E43" }} /> },
+        { name: "Express",           icon: <SiExpress style={{ color: "#d1d5db" }} /> },
+        { name: "Django",            icon: <SiDjango style={{ color: "#44b78b" }} /> },
+        { name: "FastAPI",           icon: <SiFastapi style={{ color: "#009688" }} /> },
+        { name: "Flask",             icon: <SiFlask style={{ color: "#d1d5db" }} /> },
+        { name: "React",             icon: <FaReact style={{ color: "#61DAFB" }} /> },
+        { name: "Next.js",           icon: <SiNextdotjs style={{ color: "#f3f4f6" }} /> },
+        { name: "REST APIs",         icon: null },
+      ],
+    },
+    {
+      label: "Databases & Cloud",
+      skills: [
+        { name: "PostgreSQL",        icon: <SiPostgresql style={{ color: "#336791" }} /> },
+        { name: "MongoDB",           icon: <SiMongodb style={{ color: "#47A248" }} /> },
+        { name: "MySQL",             icon: <SiMysql style={{ color: "#00758F" }} /> },
+        { name: "Oracle",            icon: <SiOracle style={{ color: "#F80000" }} /> },
+        { name: "AWS",               icon: <FaAws style={{ color: "#FF9900" }} /> },
+        { name: "GCP",               icon: <SiGooglecloud style={{ color: "#4285F4" }} /> },
+        { name: "Docker",            icon: <FaDocker style={{ color: "#2496ED" }} /> },
+        { name: "Kubernetes",        icon: <SiKubernetes style={{ color: "#326CE5" }} /> },
+        { name: "Linux",             icon: <FaLinux style={{ color: "#FCC624" }} /> },
+      ],
+    },
+    {
+      label: "Tools & Practices",
+      skills: [
+        { name: "Git",               icon: <FaGitAlt style={{ color: "#F05032" }} /> },
+        { name: "Postman",           icon: <SiPostman style={{ color: "#FF6C37" }} /> },
+        { name: "Jira",              icon: <SiJira style={{ color: "#0052CC" }} /> },
+        { name: "OpenAPI / Swagger", icon: <SiSwagger style={{ color: "#85EA2D" }} /> },
+        { name: "Twilio",            icon: <SiTwilio style={{ color: "#F22F46" }} /> },
+        { name: "Agile / Scrum",     icon: null },
+        { name: "JMeter",            icon: null },
+        { name: "Flawfinder",        icon: null },
+      ],
+    },
+  ];
 
-            ],
-        },
-    ];
+  return (
+    <section
+      id="skills"
+      className="min-h-screen px-8 md:px-20 py-20 flex flex-col justify-center"
+      style={{ background: "#121212" }}
+    >
+      <div className="max-w-4xl mx-auto w-full">
+        <div className="section-heading">
+          <p className="section-label">04 / Toolkit</p>
+          <h2 className="section-title">Skills</h2>
+          <div className="section-bar" />
+        </div>
 
-    return (
-        <section
-            id="skills"
-            className="min-h-screen bg-gray-50 text-gray-900 pl-8 pr-8 md:pl-20 md:pr-20 py-20 flex flex-col justify-start"
-        >
-            <div className="max-w-5xl mx-auto">
-                <h2 className="text-4xl font-bold mb-12 text-[#b5542b]">Skills</h2>
-
-                <div className="space-y-10">
-                    {skillCategories.map((category) => (
-                        <div key={category.title}>
-                            <h3 className="text-2xl font-semibold mb-4 text-[#b5542b]">
-                                {category.title}
-                            </h3>
-
-                            {/* Single-line skill row */}
-                            <div className="flex flex-wrap gap-4">
-                                {category.skills.map((skill) => (
-                                    <div
-                                        key={skill.name}
-                                        className="flex items-center space-x-3  p-3 rounded-md shadow-sm hover:shadow-md transition"
-                                    >
-                                        {skill.icon && (
-                                            <div className="text-2xl flex-shrink-0">{skill.icon}</div>
-                                        )}
-                                        <span className="font-medium text-gray-800">
-                                            {skill.name}
-                                        </span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
+        <div className="space-y-8">
+          {categories.map((cat) => (
+            <div key={cat.label}>
+              <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#555" }}>
+                {cat.label}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {cat.skills.map(({ name, icon }) => (
+                  <span key={name} className="skill-tag flex items-center gap-2">
+                    {icon && <span className="text-base leading-none">{icon}</span>}
+                    <span>{name}</span>
+                  </span>
+                ))}
+              </div>
             </div>
-        </section>
-
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
