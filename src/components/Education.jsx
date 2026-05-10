@@ -6,7 +6,7 @@ export default function Education() {
       degree: "Master of Science in Computer Science",
       period: "Aug 2024 – May 2026",
       gpa: "3.67 / 4.0",
-      details: ["Focused on Software Engineering, Cloud Systems, and Applied ML"],
+      details: ["Focused on Software Engineering, Cloud Systems, and Applied ML", "Graduated May 2026"],
     },
     {
       name: "Marathwada Mitra Mandal's College of Engineering",

@@ -19,8 +19,8 @@ export default function About() {
         </p>
 
         <p className="text-base leading-relaxed mb-5" style={{ color: "#B8B8B8" }}>
-          I'm completing my <span className="font-medium" style={{ color: "#F5F5F5" }}>M.S. in Computer Science</span> at{" "}
-          <span className="font-medium" style={{ color: "#F5F5F5" }}>North Carolina State University</span> (GPA 3.67). My work sits at the intersection of
+          I hold a <span className="font-medium" style={{ color: "#F5F5F5" }}>Masters Degree in Computer Science</span> from{" "}
+          <span className="font-medium" style={{ color: "#F5F5F5" }}>North Carolina State University</span> (GPA 3.67, May 2026). My work sits at the intersection of
           reliable backend engineering and practical AI — systems that are production-ready, not just proof-of-concept.
         </p>
 
@@ -32,7 +32,7 @@ export default function About() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
           {[
             { label: "Location", value: "Raleigh, NC (Open to Relocation)" },
-            { label: "Education", value: "M.S. Computer Science, NC State" },
+            { label: "Education", value: "M.S. Computer Science, NC State (May 2026)" },
             { label: "Focus Areas", value: "Backend Systems · Agentic AI · LLM Applications" },
           ].map(({ label, value }) => (
             <div key={label}>
