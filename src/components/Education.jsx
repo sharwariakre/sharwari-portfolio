@@ -5,7 +5,7 @@ export default function Education() {
       location: "Raleigh, NC",
       degree: "Master of Science in Computer Science",
       period: "Aug 2024 – May 2026",
-      gpa: "3.67 / 4.0",
+      gpa: "3.73 / 4.0",
       details: ["Focused on Software Engineering, Cloud Systems, and Applied ML", "Graduated May 2026"],
     },
     {
