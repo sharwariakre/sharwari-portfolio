@@ -61,7 +61,7 @@ function TerminalCard() {
             <p className="pl-4">
               <span style={{ color: "#D97A43" }}>"gpa"</span>
               <span style={{ color: "#555" }}>: </span>
-              <span style={{ color: "#D4A76A" }}>3.67</span>
+              <span style={{ color: "#D4A76A" }}>3.73</span>
               <span style={{ color: "#555" }}>,</span>
             </p>
             <p className="pl-4">
