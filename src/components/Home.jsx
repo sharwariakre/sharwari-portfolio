@@ -48,9 +48,8 @@ function TerminalCard() {
               <span style={{ color: "#D97A43" }}>"systems"</span>
               <span style={{ color: "#555" }}>: [</span>
             </p>
-            <p className="pl-8"><span style={{ color: "#7EB8D4" }}>"Distributed Systems"</span><span style={{ color: "#555" }}>,</span></p>
-            <p className="pl-8"><span style={{ color: "#7EB8D4" }}>"LLM Applications"</span><span style={{ color: "#555" }}>,</span></p>
-            <p className="pl-8"><span style={{ color: "#7EB8D4" }}>"Cloud Infrastructure"</span></p>
+            <p className="pl-8"><span style={{ color: "#7EB8D4" }}>"Applied AI Applications"</span><span style={{ color: "#555" }}>,</span></p>
+            <p className="pl-8"><span style={{ color: "#7EB8D4" }}>"Backend Development"</span></p>
             <p className="pl-4" style={{ color: "#555" }}>],</p>
             <p className="pl-4">
               <span style={{ color: "#D97A43" }}>"education"</span>
