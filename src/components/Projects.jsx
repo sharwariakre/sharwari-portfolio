@@ -18,6 +18,17 @@ export default function Projects() {
         <>Designed a real-time mood scoring system extracting acoustic features via Librosa with a rolling per-user baseline and dual-channel SMS escalation triggered by LLM-detected distress or post-call mood regression.</>,
       ],
     },
+        {
+      title: "Meeting Negotiator — Multi-Agent Scheduling System",
+      tech: ["LangGraph", "FastAPI", "React", "Google Calendar API", "Ollama"],
+      featured: true,
+      github: "https://github.com/sharwariakre/meeting-negotiator",
+      description: [
+        <>Delivers <strong style={{ color: "#F5F5F5" }}>~10s end-to-end</strong> scheduling negotiation via a 4-agent LangGraph pipeline; advocate agents propose slots per participant and an arbitrator runs deterministic interval-intersection on 20+ real calendar slots before LLM selection, preventing hallucination.</>,
+        <>Integrated <strong style={{ color: "#F5F5F5" }}>Google Calendar freebusy API</strong> with per-participant OAuth and automatic event creation on consensus, backed by a 5-endpoint FastAPI backend and React UI.</>,
+        <>3-round negotiation loop with escalation fallback; <strong style={{ color: "#F5F5F5" }}>45 tests</strong> across overlap logic, graph runs, and state schema validated via GitHub Actions CI.</>,
+      ],
+    },
     {
       title: "CodeNarrator — AI-Powered Codebase Explorer",
       tech: ["FastAPI", "Python", "Ollama", "D3.js"],
