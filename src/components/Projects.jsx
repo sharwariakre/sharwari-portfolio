@@ -18,7 +18,7 @@ export default function Projects() {
         <>Designed a real-time mood scoring system extracting acoustic features via Librosa with a rolling per-user baseline and dual-channel SMS escalation triggered by LLM-detected distress or post-call mood regression.</>,
       ],
     },
-        {
+    {
       title: "Meeting Negotiator — Multi-Agent Scheduling System",
       tech: ["LangGraph", "FastAPI", "React", "Google Calendar API", "Ollama"],
       featured: true,
@@ -33,7 +33,7 @@ export default function Projects() {
       title: "CodeNarrator — AI-Powered Codebase Explorer",
       tech: ["FastAPI", "Python", "Ollama", "D3.js"],
       featured: true,
-      github: "https://github.com/sharwariakre",
+      github: "https://github.com/sharwariakre/CodeNarrator",
       description: [
         <>Developed an <strong style={{ color: "#F5F5F5" }}>autonomous codebase agent</strong> that maps dependencies and self-directs exploration across 15 repos, cutting onboarding time from ~2 hours to under 5 minutes.</>,
         <>Integrated a local <strong style={{ color: "#F5F5F5" }}>Qwen2.5-Coder 7B model via Ollama</strong> to generate architectural summaries with no external API or cloud cost.</>,
@@ -41,9 +41,20 @@ export default function Projects() {
       ],
     },
     {
+      title: "Log Anomaly Detection — AI-Powered SOC Log Analysis",
+      tech: ["Next.js", "Node.js", "Express", "PostgreSQL", "Claude API"],
+      featured: true,
+      github: "https://github.com/sharwariakre/Threat_Watch",
+      description: [
+        <>Built a <strong style={{ color: "#F5F5F5" }}>two-layer AI pipeline</strong>: deterministic regex parser pre-flags brute force (sliding window), SQLi, and path traversal patterns; Claude API reasons over structured JSON to generate <strong style={{ color: "#F5F5F5" }}>SOC narratives</strong>, anomaly confidence scores, and attack classification badges.</>,
+        <>Engineered a <strong style={{ color: "#F5F5F5" }}>per-anomaly remediation playbook</strong> via a decoupled Claude call, cached in PostgreSQL; interactive dashboard surfaces Top Attacking IPs, event timeline, and filterable log table with flagged row drill-down.</>,
+        <>Implemented <strong style={{ color: "#F5F5F5" }}>heuristic fallback</strong> when Claude API is unavailable; brute force success detection flags when a 401 streak ends in a 200 from the same IP — the most critical SOC finding in the sample log.</>,
+      ],
+    },
+    {
       title: "Agentic LLM Workflow for Automated Vulnerability Patch Generation",
       tech: ["CodeLlama", "CodeAstra", "Python", "Flawfinder"],
-      featured: true,
+      featured: false,
       github: "https://github.com/sharwariakre",
       description: [
         <>Developed an <strong style={{ color: "#F5F5F5" }}>agentic dual-model LLM pipeline</strong> to auto-generate patches for C/C++ vulnerabilities using semantic hints.</>,
